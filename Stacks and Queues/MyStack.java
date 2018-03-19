@@ -1,3 +1,6 @@
+// LIFO
+// Operations o(1)
+// space/search o(n)
 class MyStack<T> {
     private static class StackNode<T>{
         StackNode<T> next;
@@ -39,7 +42,7 @@ class MyStack<T> {
     }
 
     // check if the stack is empty or not
-    public isEmpty(){
+    public boolean isEmpty(){
         return this.top == null;
     }
 }

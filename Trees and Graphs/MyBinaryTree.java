@@ -1,4 +1,4 @@
-import com.sun.org.apache.xalan.internal.xsltc.dom.BitArray;
+// o(log n) to add remove and search
 
 class MyBinaryTree<T> {
     private static class BinaryTreeNode<T>{
@@ -58,7 +58,7 @@ class MyBinaryTree<T> {
     }
 
     // remove a node from the tree 
-    // calls Find to retrieve node to re removed and parent node
+    // calls Find to retrieve node to be removed and parent node
     public void removeNodeAllCases(BinaryTreeNode<String> current, Integer data){
         
         // retrieve node to be deleted
@@ -67,6 +67,7 @@ class MyBinaryTree<T> {
         if (node == null){ // if node DNE in tree
             System.out.println("Exception: No node with value " + data 
             + " exists to remove.");
+            break; 
         } 
       
         // retrieve parent node

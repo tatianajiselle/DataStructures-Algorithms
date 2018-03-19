@@ -26,7 +26,7 @@ class MyQueue{
         
         last = newNode;
 
-        // if queue is queue is only one node
+        // if queue is only one node
         if (this.first == null){
             this.first = this.last;
         }

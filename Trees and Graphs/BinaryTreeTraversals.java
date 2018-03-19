@@ -14,7 +14,7 @@ class BinaryTreeTraversals {
         if (node != null){
             print(node);
             preOrder(node.left);
-            reOrder(node.right);
+            preOrder(node.right);
         }
     }
 

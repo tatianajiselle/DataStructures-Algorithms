@@ -13,16 +13,16 @@ class BinaryTreeTraversals {
     public void preOrder(BinaryTreeNode<T> node){
         if (node != null){
             print(node);
-            inOrder(node.left);
-            inOrder(node.right);
+            preOrder(node.left);
+            reOrder(node.right);
         }
     }
 
     // prints the current node after its child nodes
     public void postOrder(BinaryTreeNode<T> node){
         if (node != null){
-            inOrder(node.left);
-            inOrder(node.right);
+            postOrder(node.left);
+            postOrder(node.right);
             print(node);
         }
     }

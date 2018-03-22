@@ -1,3 +1,5 @@
+// complexity of a traversal is o(n)
+
 class BinaryTreeTraversals {
 
     // print the left node then the current node then the right branch
@@ -19,6 +21,7 @@ class BinaryTreeTraversals {
     }
 
     // prints the current node after its child nodes
+    // root is the last node visited
     public void postOrder(BinaryTreeNode<T> node){
         if (node != null){
             postOrder(node.left);

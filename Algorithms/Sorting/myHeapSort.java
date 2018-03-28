@@ -1,7 +1,5 @@
 public class myHeapSort{
 
-    private static int N; // root
-
     // swaps first and last items in array
     public void swap (int arr[], int i, int index){
         int temp = array[i];
